@@ -9,6 +9,12 @@ a, p, h1, h2, h3, h4, h5, label, li, ul {
 #navbar a{
     font-size: 1.6rem;
 }
+
+.logo {
+  width:;
+  height;
+}
+
 a {
   text-decoration: none;
   font-size: 1.4rem;
@@ -23,26 +29,19 @@ a {
   border-radius:5px;
 }
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
+@media (min-width: 768px) {
+  .custom_w{
+    min-width:400px;
   }
 }
 
-@media (max-width: 767.98px) {
-.size-xs {
-  font-size: 2rem;
-  }
-}
-
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
 .baseBlock {
-  min-height: 150px;
+  min-height: 200px;
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
 .sub_head_size {
   font-size: 1rem;
   }
@@ -53,12 +52,12 @@ a {
 	padding: 0 0 15px 0px;
 	border-radius: 20px;
 	overflow: hidden;
-	min-height: 300px;
+	min-height: 150px;
 	background: #fff;
 	-moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 	-o-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 	transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 
 .baseBlock:hover {
@@ -67,7 +66,7 @@ a {
 	-ms-transform: translate(0, -8px);
 	-o-transform: translate(0, -8px);
 	transform: translate(0, -8px);
-	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .small{
