@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
 
   <!-- Latest compiled and minified CSS -->
@@ -26,10 +27,20 @@
   <!-- icon library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Adaboost</title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script type="text/javascript">
+    $(function(){
+    $("#header").load("./html/header.html");
+    });
+    $(function(){
+    $("#footer").load("./html/footer.html");
+    });
+  </script>
 </head>
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light text-light bg-dark bg-gradient sticky-top" id="navbar">
+  <!--
+  <header id="main_header">
+    <nav class="navbar navbar-expand-lg navbar-dark text-light bg-dark bg-gradient" id="navbar">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img src="./image/ada-white-resize.png" class="img-fluid" alt="adaboost logo">
@@ -47,7 +58,7 @@
             Solutions
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Credit Risk Modelling</a></li>
+            <li><a class="dropdown-item" href="./html/crm.html">Credit Risk Modelling</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Customer Lifetime Value</a></li>
             <li><hr class="dropdown-divider"></li>
@@ -82,7 +93,8 @@
     </div>
   </div>
 </nav>
-  </header>
+</header> -->
+<div id="header"></div>
   <!-- body main section-->
 
   <main>
@@ -101,16 +113,6 @@
             <div class="w-100"></div>
             <div class="col">
               <button herf="#" type="button" class="btn btn-lg text-white" style="width:100px;background-color:#ff6666;">Explore</button>
-              <!-- <form>
-                  <div class="row d-flex">
-                    <div class="col">
-                      <input type="text" class="form-control form-control-lg" placeholder="Email">
-                    </div>
-                    <div class="col">
-                      <button type="button" class="btn btn-secondary btn-lg">Contact Me</button>
-                    </div>
-                  </div>
-                </form> -->
             </div>
           </div>
         </div>
@@ -119,12 +121,10 @@
         </div>
       </div>
     </div>
-
     <!-- First Element : Intro ends -->
 
     <!--  Second Element : Solutions starts -->
-
-    <div id="solutions" class="container-fluid py-5" data-aos="zoom-in">
+    <div id="solutions" class="container-fluid py-5 bg-light" data-aos="zoom-in">
       <div class="row">
         <div class="col text-center">
           <p class="text-black-50 text-left py-4 display-2 fw-bold">Solutions</p>
@@ -138,7 +138,7 @@
               <p class="card-text h4 text-justify">We provide cutting edge solutions that help banks and NBFCs lend to borrowers with highest chances of paying back on time.</p>
             </div>
             <div class="d-inline-flex justify-content-end px-5">
-              <div><span="align-middle"><a href="#" class="h4 text-primary">Know More</a></span></div>
+              <div><span="align-middle"><a href="/credit-risk-model/" class="h4 text-primary">Know More</a></span></div>
               <div><i class="fa fa-angle-double-right fa-2x px-2 text-primary" aria-hidden="true"></i></div>
             </div>
           </div>
@@ -151,7 +151,7 @@
               <p class="card-text h4 text-justify">Our CLTV encourages firms to shift their focus from quarterly profits to the long-term health of their customer relationships.</p>
             </div>
             <div class="d-inline-flex justify-content-end px-5">
-              <div><span="align-middle"><a href="#" class="h4 text-primary">Know More</a></span></div>
+              <div><span="align-middle"><a href="/customer-lifetime-value/" class="h4 text-primary">Know More</a></span></div>
               <div><i class="fa fa-angle-double-right fa-2x px-2 text-primary" aria-hidden="true"></i></div>
             </div>
           </div>
@@ -166,7 +166,7 @@
               <p class="card-text h4 text-justify">Our Fraud Detection solution uses state of the art technology to recognize fraudulent patterns, and anomalous transactions.</p>
             </div>
             <div class="d-inline-flex justify-content-end px-5">
-              <div><span="align-middle"><a href="#" class="h4 text-primary">Know More</a></span></div>
+              <div><span="align-middle"><a href="/fraud-detection/" class="h4 text-primary">Know More</a></span></div>
               <div><i class="fa fa-angle-double-right fa-2x px-2 text-primary" aria-hidden="true"></i></div>
             </div>
           </div>
@@ -179,7 +179,7 @@
               <p class="card-text h4 text-justify">Our Survival Analysis solution is part of our customer retention strategy. It predicts time to customer attrition which results in better customer retention.</p>
             </div>
             <div class="d-inline-flex justify-content-end px-5">
-              <div><span="align-middle"><a href="#" class="h4 text-primary">Know More</a></span></div>
+              <div><span="align-middle"><a href="/survival-analysis/" class="h4 text-primary">Know More</a></span></div>
               <div><i class="fa fa-angle-double-right fa-2x px-2 text-primary" aria-hidden="true"></i></div>
             </div>
           </div>
@@ -194,7 +194,7 @@
               <p class="card-text h4 text-justify">Our time series model can help plan your business's future by forecasting essential business metrics like sales, budget and turnovers to name a few.</p>
             </div>
             <div class="d-inline-flex justify-content-end px-5">
-              <div><span="align-middle"><a href="#" class="h4 text-primary">Know More</a></span></div>
+              <div><span="align-middle"><a href="/time-series/" class="h4 text-primary">Know More</a></span></div>
               <div><i class="fa fa-angle-double-right fa-2x px-2 text-primary" aria-hidden="true"></i></div>
             </div>
           </div>
@@ -207,13 +207,12 @@
               <p class="card-text h4 text-justify">A/B testing eliminates all the guesswork out of website optimization and enables management to make data-backed decisions.</p>
             </div>
             <div class="d-inline-flex justify-content-end px-5">
-              <div><span="align-middle"><a href="#" class="h4 text-primary">Know More</a></span></div>
+              <div><span="align-middle"><a href="/ab-testing/" class="h4 text-primary">Know More</a></span></div>
               <div><i class="fa fa-angle-double-right fa-2x px-2 text-primary" aria-hidden="true"></i></div>
             </div>
           </div>
         </div>
       </div>
-
     </div>
     <!--  Second Element : Solutions ends -->
 
@@ -225,27 +224,26 @@
       </div>
       <div class="container-fluid py-5">
         <div class="row">
-          <div class="col w-auto d-flex justify-content-center mt-3">
+          <div class="col w-auto d-flex justify-content-center mt-3" data-toggle="tooltip" data-placement="top" title="Banks & NBFCs">
             <img class="small" src="./image/Bank-2-icon.png" alt="bank icon" data-aos="zoom-in">
           </div>
 
-          <div class="col w-auto d-flex justify-content-center mt-3">
+          <div class="col w-auto d-flex justify-content-center mt-3" data-toggle="tooltip" data-placement="top" title="Retail">
               <img class="small" src="./image/market-icon.png" alt="retail icon" data-aos="zoom-in">
           </div>
 
-          <div class="col w-auto d-flex justify-content-center mt-3">
+          <div class="col w-auto d-flex justify-content-center mt-3" data-toggle="tooltip" data-placement="top" title="Ecommerce">
               <img class="small" src="./image/Cart-icon.png" alt="ecommerce icon" data-aos="zoom-in">
           </div>
 
-          <div class="col w-auto d-flex justify-content-center mt-3">
+          <div class="col w-auto d-flex justify-content-center mt-3" data-toggle="tooltip" data-placement="top" title="Healthcare">
               <img class="small" src="./image/med-box-icon.png" alt="healthcare icon" data-aos="zoom-in">
           </div>
-
         </div>
       </div>
     </div>
-
     <!--  Third Element : Industry ends -->
+
     <!--  Fourth Element : Team starts -->
     <div class="container-fluid pt-5" data-aos="zoom-in">
       <div class="row my-5">
@@ -353,51 +351,7 @@
       </div>
     </div>
   </main>
-  <footer>
-    <div class="container-fluid border-top">
-        <div class="row">
-          <div class="col-sm-4">
-            <!-- hey hey! -->
-          </div>
-          <div class="col-sm-2 py-5">
-            <ul style="list-style: none;">
-              <h2 class="font_color">Solutions</h2>
-              <li><a href="#">Credit Risk Modelling</a></li>
-              <li><a href="#">Customer Lifetime Value</a></li>
-              <li><a href="#">Fraud Detection</a></li>
-              <li><a href="#">Survival Analysis</a></li>
-              <li><a href="#">Time Series</a></li>
-              <li><a href="#">A/B Testing</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-2 py-5">
-            <ul style="list-style: none;">
-              <h2 class="text-primary">Industry</h2>
-              <li><a href="#">Banks & NBFCs</a></li>
-              <li><a href="#">Retail</a></li>
-              <li><a href="#">Ecommerce</a></li>
-              <li><a href="#">Healthcare</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-2 py-5">
-            <ul style="list-style: none;">
-              <h2 class="text-primary">Blog</h2>
-              <li><a href="#">Machine Learning</a></li>
-              <li><a href="#">Artificial Intelligence</a></li>
-              <li><a href="#">Data Analytics</a></li>
-              <li><a href="#">Finance</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-2 py-5">
-            <ul style="list-style: none;">
-              <h2 class="text-primary">Sharing</h2>
-              <li><a href="#"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter-square fa-2x"></i></a></li>
-            </ul>
-          </div>
-        </div>
-    </div>
-  </footer>
+  <div id="footer"></div>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({duration:1200});
