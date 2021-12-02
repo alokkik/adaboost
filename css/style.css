@@ -10,11 +10,6 @@ a, p, h1, h2, h3, h4, h5, label, li, ul {
     font-size: 1.6rem;
 }
 
-.logo {
-  width:;
-  height;
-}
-
 a {
   text-decoration: none;
   font-size: 1.4rem;
@@ -31,7 +26,7 @@ a {
 
 @media (min-width: 768px) {
   .custom_w{
-    min-width:400px;
+    width:550px;
   }
 }
 
