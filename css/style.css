@@ -16,6 +16,7 @@ a {
   line-height: 2.5rem;
   color:rgba(0,0,0,.5);
 }
+
 .font_color {
   color:#007FFF;
 }
@@ -25,8 +26,8 @@ a {
 }
 
 @media (min-width: 768px) {
-  .custom_w{
-    width:550px;
+  .custom_w {
+    width: 250px;
   }
 }
 
@@ -64,7 +65,7 @@ a {
 	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-.small{
+.small {
   width:196px;
   height:196px;
 }
