@@ -30,14 +30,18 @@
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <script type="text/javascript">
     $(function(){
-    $("#main_header").load("/html/header.html");
+    $("#header").load("/html/header.html");
+    });
+    $(function(){
+    $("#footer").load("/html/footer.html");
     });
   </script>
 </head>
 <body>
-  <header id="main_header"></header>
+  <header id="header"></header>
   <div class="container-fluid bg-primary" style="height:400px;">
       <p class="display-6 text-white">Credit Risk Modelling</p>
   </div>
+  <footer id="footer"></footer>
 </body>
 </html>

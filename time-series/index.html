@@ -30,14 +30,18 @@
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <script type="text/javascript">
     $(function(){
-    $("#main_header").load("/html/header.html");
+    $("#header").load("/html/header.html");
+    });
+    $(function(){
+    $("#footer").load("/html/footer.html");
     });
   </script>
 </head>
 <body>
-  <header id="main_header"></header>
+  <header id="header"></header>
   <div class="container-fluid bg-secondary" style="height:400px;">
       <p class="display-6 text-white">Time Series</p>
   </div>
+  <footer id="footer"></footer>
 </body>
 </html>
