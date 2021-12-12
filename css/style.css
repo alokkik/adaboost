@@ -43,6 +43,11 @@ a {
   }
 }
 
+.rsize {
+  width: 240px;
+  height:160px;
+}
+
 .baseBlock {
 	margin: 0px 0px 35px 0px;
 	padding: 0 0 15px 0px;
